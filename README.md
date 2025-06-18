@@ -59,8 +59,8 @@ Terraform is an open-source Infrastructure as Code (IaC) tool developed by Hashi
 
 **CodeSpaces:**
 
-  1. **>**add dev conatainer configuaration --> modify active config --> terraform,tfliht verified --> kep defaults --> devconatiner.json
+  1. >add dev conatainer configuaration --> modify active config --> terraform,tfliht verified --> kep defaults --> devconatiner.json
 
-  2. **>**add dev conatainer configuaration --> modify active config --> aws cli --> kep defaults --> devconatiner.json
+  2. >add dev conatainer configuaration --> modify active config --> aws cli --> kep defaults --> devconatiner.json
 
-  3. **>**rebuild container 
+  3. >rebuild container 
