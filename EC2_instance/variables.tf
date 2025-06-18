@@ -15,6 +15,6 @@ variable "key_pair" {
 }
 
 variable "sg" {
-  type = string
-  default = "name of sg"
+  type = list(string)
+  default = ["name of sg"]
 }
