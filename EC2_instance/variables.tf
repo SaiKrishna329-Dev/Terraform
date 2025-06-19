@@ -1,7 +1,7 @@
 variable "ami_id" {
   description = "ubuntu ami for myfirstEC2"
   type = string
-  default = "value"
+  default = "ami-020cba7c55df1f615"
 }
 
 variable "instance_type" {
@@ -11,7 +11,7 @@ variable "instance_type" {
 
 variable "key_pair" {
   type = string 
-  default = "dev"  
+  default = "DevOps"  
 }
 
 variable "sg" {
