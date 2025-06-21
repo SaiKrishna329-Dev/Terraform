@@ -1,6 +1,6 @@
 1. write main.tf with import block with "id" and "to" path
 
-       ```terraform init --> terraform plan -generate-config-out=generated_resource.tf```
+        terraform init --> terraform plan -generate-config-out=generated_resource.tf
 
 2.  generated_resource.tf file will get create copy contents and delete generated file and import block in main.tf --> paste copied contents of generated file
 
@@ -8,6 +8,6 @@
 
 4. To create the statefile we run 
 
-       ```terraform import aws_instance.ec2_import id(i-0764ad3408ba082b7)```
+        terraform import aws_instance.ec2_import id(i-0764ad3408ba082b7)
 
 5. Statefile got created and now if we plan it shows nothing to change. 
