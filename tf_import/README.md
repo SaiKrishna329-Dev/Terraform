@@ -11,3 +11,6 @@
         terraform import aws_instance.ec2_import id(i-0764ad3408ba082b7)
 
 5. Statefile got created and now if we plan it shows nothing to change. 
+
+**NOTE:** without creating generate output file also we can update the statefile directly, but only change is out main.tf should have the resource block even without contents also it will work. ex: vpc_import
+
