@@ -2,6 +2,12 @@ provider "aws" {
   region = "us-east-1"
 }
 
+
+#import {
+ # to = aws_instance.ec2_import
+ # id = "i-326edakj03004f8"
+#}
+
 resource "aws_instance" "ec2_import" {
   ami                                  = "ami-020cba7c55df1f615"
   associate_public_ip_address          = true
