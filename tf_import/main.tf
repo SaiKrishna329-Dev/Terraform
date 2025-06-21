@@ -21,7 +21,6 @@ resource "aws_instance" "ec2_import" {
   placement_group                      = null
   placement_partition_number           = 0
   private_ip                           = "172.31.21.14"
-  region                               = "us-east-1"
   secondary_private_ips                = []
   security_groups                      = ["launch-wizard-1"]
   source_dest_check                    = true
