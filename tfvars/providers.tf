@@ -5,12 +5,12 @@ terraform {
         version = "~> 5.0"
     }
   }
-  backend "s3" {
-    bucket = "remote-robo"
-    key = "demo"
-    region = "us-east-1"
-    dynamodb_table = "lock-robo"
-  }
+#   backend "s3" {
+#     bucket = "remote-robo"
+#     key = "demo"
+#     region = "us-east-1"
+#     dynamodb_table = "lock-robo"
+#   }
 }
 
 provider "aws" {
