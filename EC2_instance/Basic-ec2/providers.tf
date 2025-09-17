@@ -7,7 +7,15 @@ terraform {
       version = "~> 5.0"
     }
   }
+  backend "s3" {
+    bucket = "terra-ec2-bucket"
+    key = "ec2/demo"
+    region = "us-east-1"
+    dynamodb_table = "terra-ec2-locking"
+  }
 }
+
+
 
 # Configure the AWS Provider
 provider "aws" {
