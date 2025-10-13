@@ -18,6 +18,7 @@ resource "aws_subnet" "public2" {
   cidr_block = "10.1.3.0/24"
 }
 
+
 # resource "aws_subnet" "public1" {
 #   vpc_id = aws_vpc.tf_vpc.id
 #   cidr_block = "10.1.0.0/24"
