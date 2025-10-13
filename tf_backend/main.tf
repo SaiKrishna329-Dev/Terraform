@@ -5,6 +5,13 @@ terraform {
         version = "~> 6.0.0"
     }
   }
+  backend "s3" {
+    bucket = "sai-s3-tf"
+    key = "demo/terraform.tfstate"
+    region = "us-east-1"
+    dynamodb_table = "terraform-state-locking"
+    encrypt = true
+  }
 }
 
 provider "aws" {
@@ -28,4 +35,9 @@ resource "aws_dynamodb_table" "tf_lock" {
     name = "LockID"
     type = "S"
   }
+}
+
+resource "aws_instance" "myfirstEC2" {
+  ami = "ami-020cba7c55df1f615"
+  instance_type = "t2.micro"
 }
