@@ -1,5 +1,7 @@
 # join - Combines a list of strings into a single string -- join(seperator, list)
 # split - Splits a string into a list of strings -- split(seperator, string)
+# slice(list, start_index, end_index)
+
 
 variable "list" {
   default = ["dev1", "dev2", "dev3"]
